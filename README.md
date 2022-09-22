@@ -22,6 +22,5 @@ Tabla de contenido:
 ## 16. [Modules](./16.Modules.md)
 ## 17. [Functions](./17.Functions.md)
 ## 18. [Workspaces](./18.Workspaces.md)
-## 19. [Opcional: Practica 2](./19.Practica%202.md)
+## 19. [Practica: AWS Full Demo](./19.AWS%20full%20demo.md)
 ## 20. [Opcional Terraform Cloud](./20.Terraform%20Cloud.md)
-## 21. [Practica 3: AWS Full Demo](./21.AWS%20full%20demo.md)
