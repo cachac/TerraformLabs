@@ -1,7 +1,5 @@
 # SSH
 resource "aws_security_group" "sgBastion" {
-  # depends_on = [var.vpc]
-
   vpc_id      =  var.vpc.id
   name        =  "sgBastion"
   description = "Comunicacion atraves del Bastion Host"

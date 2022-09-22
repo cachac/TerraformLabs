@@ -16,7 +16,11 @@ variable "cidr_block" {
   type        = string
   description = "Bloque de IP's para la VPC"
 }
-variable "public_cidr_block" {
+variable "public_cidr_block_a" {
+  type        = string
+  description = "Bloque de IP's para la subnet pública"
+}
+variable "public_cidr_block_b" {
   type        = string
   description = "Bloque de IP's para la subnet pública"
 }
@@ -24,9 +28,13 @@ variable "private_cidr_block" {
   type        = string
   description = "Bloque de IP's para la subnet privada"
 }
-variable "public_zone" {
+variable "public_zone_a" {
   type        = string
-  description = "Zona de acceso público"
+  description = "Zona de acceso público A"
+}
+variable "public_zone_b" {
+  type        = string
+  description = "Zona de acceso público B"
 }
 variable "private_zone" {
   type        = string

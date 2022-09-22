@@ -1,8 +1,6 @@
 
 # PRIVATE WEB
 resource "aws_security_group" "sgPrivate" {
-  # depends_on = [var.vpc, aws_security_group.sgBastion, aws_security_group.sgPublic]
-
   vpc_id      = var.vpc.id
   name        = "sgPrivate"
   description = "Comunicacion PRIVADA http - https - ssh"
@@ -11,8 +9,6 @@ resource "aws_security_group" "sgPrivate" {
 # ingress
 
 resource "aws_security_group_rule" "sg_ingress_rule_private_ssh" {
-  # depends_on = [aws_security_group.sgBastion]
-
   type                     = "ingress"
   description              = "from Bastion"
   from_port                = 22
@@ -24,8 +20,6 @@ resource "aws_security_group_rule" "sg_ingress_rule_private_ssh" {
 }
 
 resource "aws_security_group_rule" "sg_ingress_rule_private_http" {
-  # depends_on = [aws_security_group.sgPublic]
-
   type                     = "ingress"
   description              = "from public SG (Load Balancer)"
   from_port                = 80
@@ -58,7 +52,6 @@ resource "aws_security_group_rule" "sg_egress_rule_private" {
   to_port     = 0
   protocol    = "-1"
   cidr_blocks = ["0.0.0.0/0"]
-  # source_security_group_id = aws_security_group.sgBastion.id
 
   security_group_id = aws_security_group.sgPrivate.id
 }
