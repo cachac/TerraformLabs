@@ -7,6 +7,11 @@ variable "lab_name" {
     error_message = "El nombre debe ser mayor a 3 caracteres."
   }
 }
+
+variable "key_name" {
+  type        = string
+  description = "Nombre de la llave SSH para conectar con el Bastion host"
+}
 variable "cidr_block" {
   type        = string
   description = "Bloque de IP's para la VPC"

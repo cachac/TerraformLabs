@@ -7,6 +7,8 @@ resource "aws_route_table" "rt_nat" {
 }
 
 # route from 0.0.0.0/0 to igw
+# gateway_id diff:
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route
 resource "aws_route" "routeNat" {
   depends_on = [aws_route_table.rt_nat]
 
