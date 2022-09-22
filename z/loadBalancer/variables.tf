@@ -1,28 +1,23 @@
 variable "lab_name" {
-  type        = string
+  type = string
 }
 
 variable "vpc" {
-  type        = any
+  type = any
 }
 
 # security groups
-
-# variable "sgPrivate" {
-#   type        = any
-# }
-
 variable "sgPublic" {
-  type        = any
+  type = any
 }
 
 # subnets
 variable "public_subnet_a" {
-  type        = any
+  type = any
 }
 variable "public_subnet_b" {
-  type        = any
+  type = any
 }
 variable "igw" {
-	type				= any
+  type = any
 }

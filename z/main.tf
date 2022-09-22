@@ -57,5 +57,6 @@ module "dns" {
   lab_name     = var.lab_name
   domain       = var.domain
   albWebserver = module.loadbalancer.albWebserver
-
 }
+
+
