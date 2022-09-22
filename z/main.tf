@@ -8,3 +8,9 @@ module "network" {
   public_zone        = var.public_zone
   private_zone       = var.private_zone
 }
+
+module "security_groups" {
+  source = "./securityGrops"
+
+  vpc = module.network.vpc
+}
