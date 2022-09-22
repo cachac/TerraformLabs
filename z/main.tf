@@ -50,3 +50,12 @@ module "autoscaling" {
   sgPrivate       = module.security_groups.sgPrivate
   tgWebserver_arn = module.loadbalancer.tgWebserver_arn
 }
+
+module "dns" {
+  source = "./dns"
+
+  lab_name     = var.lab_name
+  domain       = var.domain
+  albWebserver = module.loadbalancer.albWebserver
+
+}

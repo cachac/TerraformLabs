@@ -41,7 +41,10 @@ variable "private_zone" {
   description = "Zona de acceso privado"
 }
 
-
+variable "domain" {
+	type = string
+	description = "Dominio DNS"
+}
 
 
 
