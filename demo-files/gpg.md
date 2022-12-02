@@ -1,8 +1,12 @@
+# 1. Crear variables con info de la llave
+
 export KEY_NAME="demo.storylabs.dev"
 export KEY_COMMENT="terreform secrets"
 
 echo $KEY_NAME - $KEY_COMMENT
 
+
+# 2. Crear llave GPG
 gpg --batch --full-generate-key <<EOF
 %no-protection
 Key-Type: 1
@@ -14,14 +18,15 @@ Name-Comment: ${KEY_COMMENT}
 Name-Real: ${KEY_NAME}
 EOF
 
-#gpg --list-secret-keys "${KEY_NAME}"
-#export KEY_FP=<C3FEBC7F6AA094882569460B7EEA4945E3CB4D5B>
-#echo $KEY_FP
+# 3. Comprobar la llave
+gpg --list-secret-keys "${KEY_NAME}"
+export KEY_FP=<C3FEBC7F6AA094882569460B7EEA4945E3CB4D5B>
+echo $KEY_FP
 
-# export pub key, in binary format:
+# 4. export pub key, in binary format:
 gpg --output terraform.gpg --export $KEY_NAME
 
-# add local provider
+# 5. add local provider
 data "local_file" "pgp_key" {
   filename = "../keys/prod/terrafrom.gpg"
 }
