@@ -20,8 +20,9 @@ EOF
 
 # 3. Comprobar la llave
 gpg --list-secret-keys "${KEY_NAME}"
-export KEY_FP=<C3FEBC7F6AA094882569460B7EEA4945E3CB4D5B>
-echo $KEY_FP
+
+#export KEY_FP=<C3FEBC7F6AA094882569460B7EEA4945E3CB4D5B>
+#echo $KEY_FP
 
 # 4. export pub key, in binary format:
 gpg --output terraform.gpg --export $KEY_NAME
