@@ -7,6 +7,7 @@ echo $KEY_NAME - $KEY_COMMENT
 
 
 # 2. Crear llave GPG
+```vim
 gpg --batch --full-generate-key <<EOF
 %no-protection
 Key-Type: 1
@@ -17,6 +18,7 @@ Expire-Date: 0
 Name-Comment: ${KEY_COMMENT}
 Name-Real: ${KEY_NAME}
 EOF
+```
 
 # 3. Comprobar la llave
 gpg --list-secret-keys "${KEY_NAME}"
