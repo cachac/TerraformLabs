@@ -1,5 +1,7 @@
 # 1. Crear variables con info de la llave
 
+> [Windows](https://www.git-tower.com/blog/setting-up-gpg-windows/)
+
 export KEY_NAME="demo.storylabs.dev"
 export KEY_COMMENT="terreform secrets"
 
