@@ -17,7 +17,4 @@ echo "Running container app..." > /home/ubuntu/ilog
 docker run --restart always -dp 80:8080 --name dockerlabs cachac/dockerlabs:latest
 echo "App ok!" > /home/ubuntu/ilog
 
-# docker run -dit --network iceCloudNetwork --ip 11.10.0.2 -p 8080:8080 --name icecloud cachac/icecloud:latest
-#docker run  -dit --network iceCloudNetwork --ip 11.10.0.2 -p 8080:8080 --name icecloud 983207445106.dkr.ecr.us-east-1.amazonaws.com/icecloud:latest
-#-subnet 11.10.0.0/24 iceCloudNetwork
 

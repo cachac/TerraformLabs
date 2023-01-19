@@ -11,7 +11,7 @@
 
 # records
 resource "aws_route53_record" "webpage" {
-  zone_id =  "aws-terralabs.tk" // aws_route53_zone.main.zone_id
+  zone_id =  "Z0439920GUKKIZ3LG696" // aws_route53_zone.main.zone_id
   name    = "${var.lab_name}.${var.domain}"
   type    = "CNAME"
   ttl     = 60
