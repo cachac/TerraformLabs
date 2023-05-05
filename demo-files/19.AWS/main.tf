@@ -12,7 +12,7 @@ module "network" {
 }
 
 module "security_groups" {
-  source = "./securityGrops"
+  source = "./securityGroups"
 
   vpc = module.network.vpc
 }
