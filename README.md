@@ -22,7 +22,7 @@ Tabla de contenido:
 ## 16. [Modules](./16.Modules.md)
 ## 17. [Functions](./17.Functions.md)
 ## 18. [Workspaces](./18.Workspaces.md)
-## 19. [Practica Final](./19.Practica%20Final.md)
+## 19. [Practica Final](./19.Practica%20final.md)
 ## 20. [Practica: AWS Well-Architected](./20.AWS%20Well-Architected.md)
 ## 21. [Opcional Terraform Cloud](./21.Terraform%20Cloud.md)
 ## 22. [Opcional AWS IAM](./22.AWS%20IAM%20(opcional).md)
