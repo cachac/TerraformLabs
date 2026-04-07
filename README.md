@@ -20,7 +20,7 @@ Tabla de contenido:
 ## 14. [Debug](./14.Debug.md)
 ## 15. [Import](./15.Import.md)
 ## 16. [Modules](./16.Modules.md)
-## 17. [Functions](./17.Functions.md)
+## 17. [Functions (opcional)](./17.Functions%20(Opcional).md)
 ## 18. [Workspaces](./18.Workspaces.md)
 ## 19. [Practica Final](./19.Practica%20final.md)
 ## 20. [Practica: AWS Well-Architected](./20.AWS%20Well-Architected.md)
